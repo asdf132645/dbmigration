@@ -1,0 +1,24 @@
+{
+  "name": "dbmigration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "build": "pkg . --target win32 --output dbmigration"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "mysql2": "^3.11.3",
+    "node-windows": "^1.0.0-beta.8",
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "targets": [
+      "node14-win-x64"
+    ],
+    "output": "dbmigration"
+  }
+}
